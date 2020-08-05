@@ -1,0 +1,247 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+img{
+    border: 3px dashed green;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:cadetblue;
+    padding: 20px;
+    height: 100vh;
+}
+
+header{
+
+    width: 100%;
+    height: 60px;
+    background: black;
+    
+}
+
+.contriner-header{
+
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+
+}
+
+
+.logo-title{
+
+    display: flex;
+
+}
+
+.logo-title img{
+
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.logo-title h4{
+
+    color: white;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+
+.icon-menu{
+
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    color: white;
+    font-size: 28px;
+
+}
+
+
+.enlaces{
+
+    float: right;
+
+}
+
+.titulo{
+
+    color: black;
+
+}
+
+figure{
+
+    margin: 0;
+    display: inline-block;
+    border: 1px solid red;
+    position: relative;
+}
+
+figcaption{
+
+    color: white;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 90%;
+    padding: 5%;
+
+
+}
+
+
+figure:hover figcaption{
+
+    display: block;
+
+
+}
+
+.tul{
+
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+.titulosima{
+
+    color: #ffa500;
+    text-align: center;
+
+}
+
+.gmail{
+
+    text-align: center;
+    color: #800000;
+
+}
+
+/*Portada*/
+
+.container-portada{
+
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/fondo2.jpg);
+    background-size: 700px;
+    animation: movimiento 10s infinite linear alternate;
+
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.capa-gradient{
+    width: 100%;
+    height: 69%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black,
+    #8672d8);
+    opacity: 0.5;
+}
+
+.container-details{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 28px;
+    color: white;
+}
+
+.details h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.details p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.details button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+}
+
+.details button:hover{
+    background: white;
+    color: black;
+}
+
+/*Articulo*/
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+article{
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 20px;+
+    margin-left: 10px;
+}
+
+article h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+article hr{
+    max-width: 500px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, black,
+    #8672d8);
+    margin-top: 10px;
+}
+
+article p{
+
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .details p{
+        font-size: 18px;
+    }
+}
